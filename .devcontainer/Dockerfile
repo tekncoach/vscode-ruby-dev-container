@@ -1,11 +1,22 @@
 FROM mcr.microsoft.com/devcontainers/ruby:1-3.2-bullseye
 
+# Ensure gems are installed on a persistent volume and available as bins
+VOLUME /bundle
+RUN su vscode -c "bundle config set --global path '/bundle'"
+ENV PATH="/bundle/ruby/$RUBY_VERSION/bin:${PATH}"
+
+# Ensure gems are installed on a persistent volume and available as bins
+# by linking the "ruby-dev-container-bundle-cache" volume to the BUNDLE_APP_CONFIG value ("/usr/local/bundle") on "docker run" commands
+# See: https://github.com/docker-library/ruby/blob/master/3.2/alpine3.18/Dockerfile#L159'
+
 # Install Rails
 RUN su vscode -c "gem install rails webdrivers --no-document"
 RUN su vscode -c "/usr/local/rvm/bin/rvm fix-permissions"
 
 # Add some aliases to the Docker image
-COPY --chown=vscode:vscode .devcontainer/.bash_aliases /home/vscode/.bash_aliases
+# COPY --chown=vscode:vscode .devcontainer/.bash_aliases /home/vscode/.bash_aliases
+# Do it via symlink from a file stored in the shared volume as Docker build doesn't follow symlinks
+RUN su vscode -c "ln -s /bundle/home-vscode-dotfiles/.bash_aliases /home/vscode/.bash_aliases"
 
 # Default value to allow debug server to serve content over GitHub Codespace's port forwarding service
 # The value is a comma-separated list of allowed domains 

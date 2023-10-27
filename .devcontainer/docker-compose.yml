@@ -9,6 +9,7 @@ services:
     
     volumes:
       - ../..:/workspaces:cached
+      - ruby-dev-container-bundle-cache:/bundle
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
@@ -47,3 +48,5 @@ services:
 
 volumes:
   postgres-data:
+  ruby-dev-container-bundle-cache:
+    external: true
