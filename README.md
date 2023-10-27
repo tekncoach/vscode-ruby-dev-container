@@ -15,3 +15,7 @@ Use pre-made templates: https://containers.dev/templates
 For Ruby On Rails and Postgresql: https://github.com/devcontainers/templates/tree/main/src/ruby-rails-postgres
 
 See: https://code.visualstudio.com/docs/devcontainers/create-dev-container
+
+## Open a container from VS Code
+
+Click on the green area in the lower left corner of VS Code or select `Reopen in Container` from the command palette.
