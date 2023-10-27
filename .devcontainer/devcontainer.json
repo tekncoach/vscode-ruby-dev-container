@@ -22,7 +22,8 @@
 			"extensions": [
 				"walkme.Ruby-extension-pack",
 				"Shopify.ruby-lsp",
-				"KoichiSasada.vscode-rdbg"
+				"KoichiSasada.vscode-rdbg",
+				"EditorConfig.EditorConfig"
 			]
 		}
 	}
