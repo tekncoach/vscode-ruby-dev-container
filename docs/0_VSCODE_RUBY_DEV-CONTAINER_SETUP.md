@@ -20,5 +20,21 @@ Getting an initial Ruby container configured was rather easy as templates exist 
 14. Select `Ok`. Don't add features here yet.
 15. Wait for the Dev Container to start
 16. Open `.devcontainer/devcontainer.json`
+17. Enable the `"forwardPorts"` option by uncommenting the property and add port "3000"
+18. Rebuild the dev container: `Dev Containers: Rebuild and Re-Open in Container` (from command palette)
 
 From there you should be up and running with a terminal and Ruby pre-installed.
+
+## Test with a new Rails app
+
+From the container terminal
+
+```bash
+gem install rails
+rails new . --minimal
+bin/rails server
+```
+
+## Ressources
+
+- Create a ruby-devcontainer-config folder: https://www.endpointdev.com/blog/2023/01/developing-rails-apps-in-a-dev-container-with-vs-code/
