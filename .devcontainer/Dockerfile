@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/ruby:1-3.2-bullseye
 
 # Install Rails
-RUN su vscode -c "gem install rails webdrivers"
+RUN su vscode -c "gem install rails webdrivers --no-document"
 RUN su vscode -c "/usr/local/rvm/bin/rvm fix-permissions"
 
 # Add some aliases to the Docker image
@@ -17,6 +17,7 @@ ENV RAILS_DEVELOPMENT_HOSTS=".githubpreview.dev,.preview.app.github.dev,.app.git
 
 # [Optional] Uncomment this line to install additional gems.
 # RUN su vscode -c "gem install <your-gem-names-here>"
+RUN su vscode -c "gem install solargraph rubocop rubocop-rails rubocop-rspec rubocop-performance --no-document"
 
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1

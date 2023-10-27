@@ -24,7 +24,8 @@ For my purposes, I started with the [Ruby On Rails template](https://github.com/
 17. Enable the `"forwardPorts"` option by uncommenting the property
 18. Open `.devcontainer/Dockerfile`
 19. Edit the last line with `RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && nvm install --lts" 2>&1` to install Node LTS
-20. Rebuild the dev container: `Dev Containers: Rebuild and Re-Open in Container` (from command palette)
+20. Add `RUN su vscode -c "gem install solargraph rubocop rubocop-rails rubocop-rspec rubocop-performance --no-document"` to add some default gems
+21. Rebuild the dev container: `Dev Containers: Rebuild and Re-Open in Container` (from command palette)
 
 From there I was up and running and ready to generate a new Rails project. With Visual Studio Code still connected to the dev container, I opened a new terminal (inside of vscode) and generated a new rails app:
 
