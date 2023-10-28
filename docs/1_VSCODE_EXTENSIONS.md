@@ -4,22 +4,29 @@ Extensions installed outside of a container cannot be used inside a container. T
 
 List of extensions available in this project inside the container:
 
-- [Ruby extension pack](https://marketplace.visualstudio.com/items?itemName=walkme.Ruby-extension-pack) (`walkme.Ruby-extension-pack`): The most common extensions for Ruby in one pack.
+**Ruby / Ruby On Rails • environment**
 
-  This extension pack includes:
+-   [Ruby extension pack](https://marketplace.visualstudio.com/items?itemName=walkme.Ruby-extension-pack) (`walkme.Ruby-extension-pack`): The most common extensions for Ruby in one pack.
 
-  - [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph): Solargraph is a language server that provides intellisense, code completion, and inline documentation for Ruby.
-  - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop): rubocop is a code analyzer for ruby.
-  - [Ruby Language Colorization](https://marketplace.visualstudio.com/items?itemName=groksrc.ruby): Adds support for Ruby colorization
-  - [Ruby Haml](https://marketplace.visualstudio.com/items?itemName=vayan.haml): Syntax highlighting for Ruby Haml files
-  - [Simple Ruby ERB](https://marketplace.visualstudio.com/items?itemName=vortizhe.simple-ruby-erb): Ruby and ERB Syntax Highlighting
-  - [ruby-linter](https://marketplace.visualstudio.com/items?itemName=hoovercj.ruby-linter)
-  - [ruby-symbols](https://marketplace.visualstudio.com/items?itemName=miguel-savignano.ruby-symbols): Search modules, class and methos in ruby files
-  - ~~Ruby~~ [DEPRECATED]: Ruby language and debugging support for Visual Studio Code. -> REPLACED by Ruby LSP
+    This extension pack includes:
 
-- [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) (`Shopify.ruby-lsp`): Analyze Ruby code and enhance the user experience
-- [VSCode Ruby rdbg Debugger](https://marketplace.visualstudio.com/items?itemName=KoichiSasada.vscode-rdbg) (`KoichiSasada.vscode-rdbg`): Ruby's rdbg debugger • Ruby debugger to connect [debug](https://github.com/ruby/debug) library which utilize recent Ruby's debug support features.
-- [Editor config](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) (`EditorConfig.EditorConfig`): This plugin attempts to override user/workspace settings with settings found in .editorconfig files
+    -   [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph): Solargraph is a language server that provides intellisense, code completion, and inline documentation for Ruby.
+    -   [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop): rubocop is a code analyzer for ruby.
+    -   [Ruby Language Colorization](https://marketplace.visualstudio.com/items?itemName=groksrc.ruby): Adds support for Ruby colorization
+    -   [Ruby Haml](https://marketplace.visualstudio.com/items?itemName=vayan.haml): Syntax highlighting for Ruby Haml files
+    -   [Simple Ruby ERB](https://marketplace.visualstudio.com/items?itemName=vortizhe.simple-ruby-erb): Ruby and ERB Syntax Highlighting
+    -   [ruby-linter](https://marketplace.visualstudio.com/items?itemName=hoovercj.ruby-linter)
+    -   [ruby-symbols](https://marketplace.visualstudio.com/items?itemName=miguel-savignano.ruby-symbols): Search modules, class and methos in ruby files
+    -   ~~Ruby~~ [DEPRECATED]: Ruby language and debugging support for Visual Studio Code. -> REPLACED by Ruby LSP
+
+-   [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) (`Shopify.ruby-lsp`): Analyze Ruby code and enhance the user experience
+-   [VSCode Ruby rdbg Debugger](https://marketplace.visualstudio.com/items?itemName=KoichiSasada.vscode-rdbg) (`KoichiSasada.vscode-rdbg`): Ruby's rdbg debugger • Ruby debugger to connect [debug](https://github.com/ruby/debug) library which utilize recent Ruby's debug support features.
+-   [Editor config](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) (`EditorConfig.EditorConfig`): This plugin attempts to override user/workspace settings with settings found in .editorconfig files
+
+**NodeJS / NPM / Vite / React • environment**
+
+-   [Jest "JS Testing"](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) (`Orta.vscode-jest`): Jest features in vscode
+-   [Jest Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) (`firsttris.vscode-jest-runner`): Simple way to run or debug a single (or multiple) tests from context-menu
 
 ## Devcontainer default gems
 
@@ -29,22 +36,22 @@ List of extensions available in this project inside the container:
 
 Run Selenium tests more easily with automatic installation and updates for all supported webdrivers.
 
-- https://github.com/titusfortner/webdrivers
+-   https://github.com/titusfortner/webdrivers
 
 **Solargraph**
 
 Solargraph provides a comprehensive suite of tools for Ruby programming: intellisense, diagnostics, inline documentation, and type checking.
 
-- https://github.com/castwide/solargraph
+-   https://github.com/castwide/solargraph
 
 **Rubocop**
 
 RuboCop is a Ruby static code analyzer (a.k.a. linter) and code formatter.
 
-- https://github.com/rubocop/rubocop
-- https://github.com/rubocop/rubocop-rails
-- https://github.com/rubocop/rubocop-rspec
-- https://github.com/rubocop/rubocop-performance/
+-   https://github.com/rubocop/rubocop
+-   https://github.com/rubocop/rubocop-rails
+-   https://github.com/rubocop/rubocop-rspec
+-   https://github.com/rubocop/rubocop-performance/
 
 ## Confirmation of plugins operation
 
@@ -64,4 +71,4 @@ The combination of Solargraph and VS Code is complicated to set up if you try to
 
 ## Resources
 
-- How to use Docker containers for Ruby on Rails development in Visual Studio Code: https://dev.to/konyu/how-to-use-docker-containers-for-ruby-on-rails-development-in-visual-studio-code-23np
+-   How to use Docker containers for Ruby on Rails development in Visual Studio Code: https://dev.to/konyu/how-to-use-docker-containers-for-ruby-on-rails-development-in-visual-studio-code-23np

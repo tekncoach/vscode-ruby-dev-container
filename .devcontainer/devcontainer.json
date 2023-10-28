@@ -23,7 +23,9 @@
 				"walkme.Ruby-extension-pack",
 				"Shopify.ruby-lsp",
 				"KoichiSasada.vscode-rdbg",
-				"EditorConfig.EditorConfig"
+				"EditorConfig.EditorConfig",
+				"Orta.vscode-jest",
+				"firsttris.vscode-jest-runner"
 			]
 		}
 	}
