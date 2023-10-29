@@ -1,0 +1,16 @@
+// Either copy/link this file in your project ".vscode/" folder
+// or copy the line in your VSCode "settings.json" in "Settings > Settings > Edit settings.json"
+{
+    "[erb]": {
+        "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+        "editor.formatOnSave": true
+    },
+    "files.associations": {
+        "*.html.erb": "erb"
+    },
+    "vscode-erb-beautify.customEnvVar": {
+        "LC_ALL": "en_US.UTF-8"
+    },
+    "emmet.includeLanguages": { "ruby": "html", "erb": "html" },
+    "files.trimTrailingWhitespace": true
+}

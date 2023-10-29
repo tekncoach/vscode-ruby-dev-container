@@ -21,7 +21,9 @@ List of extensions available in this project inside the container:
 
 -   [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) (`Shopify.ruby-lsp`): Analyze Ruby code and enhance the user experience
 -   [VSCode Ruby rdbg Debugger](https://marketplace.visualstudio.com/items?itemName=KoichiSasada.vscode-rdbg) (`KoichiSasada.vscode-rdbg`): Ruby's rdbg debugger • Ruby debugger to connect [debug](https://github.com/ruby/debug) library which utilize recent Ruby's debug support features.
+-   [ERB Formatter/Beautify](https://marketplace.visualstudio.com/items?itemName=aliariff.vscode-erb-beautify): Use with `option + shift + F`
 -   [Editor config](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) (`EditorConfig.EditorConfig`): This plugin attempts to override user/workspace settings with settings found in .editorconfig files
+-   [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 **NodeJS / NPM / Vite / React • environment**
 

@@ -19,7 +19,7 @@ RUN su vscode -c "/usr/local/rvm/bin/rvm fix-permissions"
 RUN su vscode -c "ln -s /bundle/home-vscode-dotfiles/.bash_aliases /home/vscode/.bash_aliases"
 
 # Default value to allow debug server to serve content over GitHub Codespace's port forwarding service
-# The value is a comma-separated list of allowed domains 
+# The value is a comma-separated list of allowed domains
 ENV RAILS_DEVELOPMENT_HOSTS=".githubpreview.dev,.preview.app.github.dev,.app.github.dev"
 
 # [Optional] Uncomment this section to install additional OS packages.
@@ -28,7 +28,7 @@ ENV RAILS_DEVELOPMENT_HOSTS=".githubpreview.dev,.preview.app.github.dev,.app.git
 
 # [Optional] Uncomment this line to install additional gems.
 # RUN su vscode -c "gem install <your-gem-names-here>"
-RUN su vscode -c "gem install solargraph rubocop rubocop-rails rubocop-rspec rubocop-performance --no-document"
+RUN su vscode -c "gem install solargraph rubocop rubocop-rails rubocop-rspec rubocop-performance htmlbeautifier --no-document"
 
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
