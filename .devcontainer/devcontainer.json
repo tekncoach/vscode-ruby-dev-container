@@ -27,7 +27,8 @@
 				"EditorConfig.EditorConfig",
 				"Orta.vscode-jest",
 				"firsttris.vscode-jest-runner",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"GitHub.copilot"
 			]
 		}
 	}
